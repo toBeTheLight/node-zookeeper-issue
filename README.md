@@ -1,4 +1,4 @@
-# change
+# Run
 
 1. npm run i
 2. Start a zookeeper server
