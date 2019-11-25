@@ -17,7 +17,7 @@ There will be some logs of empty response when a new node has been append to the
 * Change the total number in init-data.js.
 * Change the length of the node path character.
 
-With the number of child nodes increasing, the number of errors increases.
+With the increasing of child nodes's count or the increasing of node path character length, the number of empty response increases.
 
 # Conclusion
 
