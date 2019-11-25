@@ -1,12 +1,12 @@
 # Run
 
-1. npm run i
+1. Run `npm i`
 2. Start a zookeeper server
 2. cd issue
 3. Change the address in options.js to the server address
-3. Run node init-data.js until enough nodes have been appended to root path (create 8000 nodes to the root path)
-4. Run watch.js (watch root path's children change event)
-5. Run add.js (create a new child node every 2 seconds)
+3. Run `node init-data.js` until enough nodes have been appended to root path (create 8000 nodes to the root path)
+4. Run `node watch.js` (watch root path's children change event)
+5. Run `node add.js` (create a new child node every 2 seconds)
 
 # Result
 
