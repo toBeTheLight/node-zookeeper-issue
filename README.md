@@ -16,8 +16,9 @@ There will be some logs of empty response when a new node has been append to the
 
 * Change the total number in init-data.js.
 * Change the length of the node path character.
+* Create a large data node, and get it.
 
-With the increasing of child nodes's count or the increasing of node path character length, the number of empty response increases.
+When you are getting data, with the increasing of data size（children list data size or single node data size）, the number of empty response increases.
 
 # Conclusion
 
