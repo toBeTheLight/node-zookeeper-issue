@@ -16,7 +16,7 @@ client.on('connect', () => {
   client.a_create(`${options.root}`, 0, JSON.stringify({}), () => {
     setInterval(() => {
       nth++
-      client.a_create(`${options.root}/a-very-long-node-path-${nth}`, 0, JSON.stringify({}) ,(...args) => {
+      client.a_create(`${options.root}/a-very-long-node-path-${nth}`, JSON.stringify({}) , 0, (...args) => {
         console.log(args)
         if (nth > 8000) {
           throw new Error('enough nodes')
