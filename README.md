@@ -33,7 +33,7 @@ A safe limit times for empty response does not exist.
 2. cd issue228-2
 3. Change the address in options.js to the server address
 3. Run `node init-data.js` until enough nodes have been appended to root node (create 100000 nodes to root node) and the data size of root node have reached the upper limit.
-4. Run `node get-node.js` (watch root path's children change event) for serveral times. `yield:zookeeper_process returned no response too many times: 48`
-5. Run `node get-children.js` (watch root path's children change event) for serveral times.`yield:zookeeper_process returned no response too many times: 60`
+4. Run `node get-node.js` (get data of root node) for serveral times. `yield:zookeeper_process returned no response too many times: 48`
+5. Run `node get-children.js` (get children of root node) for serveral times.`yield:zookeeper_process returned no response too many times: 60`
 6. Maybe 60*3 is a safety limit for no response.
 
