@@ -359,8 +359,6 @@ public:
 
         if (zk->noResponseCounter > 10) {
             LOG_ERROR("yield:zookeeper_process returned no response too many times: %d\n", zk->noResponseCounter);
-            zk->realClose(ZOO_EXPIRED_SESSION_STATE);
-            return;
         }
 
         zk->yield();
